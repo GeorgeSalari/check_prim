@@ -4,7 +4,10 @@ def check_prim(array)
     is_prime = true
     i = 2
     while i < num do
-      is_prime = false if num % i == 0
+      if num % i == 0
+        is_prime = false
+        break
+      end
       i += 1
     end
     result << is_prime
